@@ -33,8 +33,18 @@
 `sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin`
 
 Verify installation:
+
 `sudo docker run hello-world`
 
+#### Run docker without sudo. Based on: https://docs.docker.com/engine/install/linux-postinstall/
+
+`sudo groupadd docker` 
+
+`sudo usermod -aG docker $USER`
+
+`newgrp docker`
+
+`docker run hello-world`
 
 
 
