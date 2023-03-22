@@ -46,6 +46,22 @@ Verify installation:
 
 `docker run hello-world`
 
+# Install SFTP
+
+## Mount Google Storage Bucket. Based on: https://github.com/GoogleCloudPlatform/gcsfuse
+
+Install gcsfuse. Follow: https://github.com/GoogleCloudPlatform/gcsfuse/blob/master/docs/installing.md
+`export GCSFUSE_REPO=gcsfuse-\`lsb_release -c -s\``
+`echo "deb https://packages.cloud.google.com/apt $GCSFUSE_REPO main" | sudo tee /etc/apt/sources.list.d/gcsfuse.list`
+`curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -``
+
+Type the following and then follow the URL and auth code prompts...
+
+`gcloud auth login` 
+
+
+
+
 
 
 
