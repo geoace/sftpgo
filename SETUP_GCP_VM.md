@@ -86,7 +86,7 @@ Note that port was changed from default below to ensure there are no conflicts w
 
 One line for copy/paste:
 
-`docker run --name enterprise-sftp -p 8050:8050 -p 2022:2022 --mount type=bind,source=/home/aaron/enterprise-data,target=/srv/sftpgo -e SFTPGO_HTTPD__BINDINGS__0__PORT=8050 -d "drakkan/sftpgo"`
+`docker run --name enterprise-sftp -p 8080:8090 -p 2022:2022 --mount type=bind,source=/home/aaron/enterprise-data,target=/srv/sftpgo -e SFTPGO_HTTPD__BINDINGS__0__PORT=8090 -d "drakkan/sftpgo"`
 
 
 
